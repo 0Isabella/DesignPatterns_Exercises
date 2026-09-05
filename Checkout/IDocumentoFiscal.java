@@ -1,5 +1,4 @@
-package Checkout;
-
 public interface IDocumentoFiscal {
     
+    public String gerar();
 }

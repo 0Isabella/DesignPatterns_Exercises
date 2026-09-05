@@ -1,5 +1,4 @@
-package Checkout;
-
-public class IEtiquetaEnvio {
+public interface IEtiquetaEnvio {
     
+    public String gerar();
 }

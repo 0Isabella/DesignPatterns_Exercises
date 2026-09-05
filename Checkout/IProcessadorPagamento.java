@@ -1,5 +1,4 @@
-package Checkout;
-
 public interface IProcessadorPagamento {
     
+    String processar(double valor);
 }
