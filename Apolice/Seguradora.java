@@ -21,5 +21,12 @@ public class Seguradora {
 
         FabricaApolice fabricaVida2 = new FabricaVida(57, 600000, false, false);
         fabricaVida2.emitirApolice();
+
+        // Testes para Apólice de Viagem
+        FabricaApolice fabricaViagem = new FabricaViagem(10, 30000, true, true);
+        fabricaViagem.emitirApolice();
+
+        FabricaApolice fabricaViagem2 = new FabricaViagem(15, 50000, false, false);
+        fabricaViagem2.emitirApolice();
 	}
 }

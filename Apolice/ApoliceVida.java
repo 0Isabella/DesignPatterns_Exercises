@@ -49,9 +49,10 @@ public class ApoliceVida extends Apolice {
 
             if (capitalSegurado > 500000)
                 System.out.println("+ Atestado Médico: " + (this.validarContratacao() ? "Presente" : "Ausente") + "\n");
-
-        System.out.println("+ Atestado Médico: " + (this.validarContratacao() ? "Não necessário" : "Inválido") + "\n");
-        System.out.println("+ " + this.listarDocumentos() + "\n");
+            else
+            System.out.println("+ Atestado Médico: " + (this.validarContratacao() ? "Não necessário" : "Inválido") + "\n");
+        
+            System.out.println("+ " + this.listarDocumentos() + "\n");
         System.out.println("+ ------------------------------------------------------------------------------------------- +\n") ;
     }
 }
