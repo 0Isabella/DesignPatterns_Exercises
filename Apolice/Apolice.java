@@ -5,7 +5,7 @@ public abstract class Apolice {
         return 0;
     }
 
-    public boolean validarCobertura(){
+    public boolean validarContratacao(){
         return true;
     }
 

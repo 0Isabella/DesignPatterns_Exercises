@@ -1,10 +1,10 @@
 public class FabricaAutomovel extends FabricaApolice {
-
+    
+    public static int contador = 1;
     public double fipe;
     public int idade;
     public int tempoHabilitado;
     public int cobertura;
-    public static int contador = 1;
 
     public FabricaAutomovel(double fipe, int idade, int tempoHabilitado, int cobertura) {
         this.id = contador++;

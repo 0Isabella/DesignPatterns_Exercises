@@ -29,7 +29,7 @@ public class ApoliceAutomovel extends Apolice {
     }
 
     @Override
-    public boolean validarCobertura() {
+    public boolean validarContratacao() {
 
         return cobertura >= 50000;
     }
@@ -42,20 +42,18 @@ public class ApoliceAutomovel extends Apolice {
     @Override
     public void gerarResumo() {
 
-        
-
         System.out.println("+ -------------------------------------------------------------- +\n") ;
         System.out.println("+ Resumo da Apólice de Automóvel +\n") ;
         System.out.println("+ ID da Apólice: AUTO-" + this.id + "\n");
 
-            if (!this.validarCobertura()) {
+            if (!this.validarContratacao()) {
                 System.out.println("+ Contratação rejeitada \n");
                 System.out.println("+ -------------------------------------------------------------- +\n") ;
                 return;
             }
 
         System.out.println("+ Prêmio Mensal: R$: " + this.calcularPremio() + "\n") ;
-        System.out.println("+ Cobertura: " + (this.validarCobertura() ? "Válida" : "Inválida") + "\n");
+        System.out.println("+ Cobertura: " + (this.validarContratacao() ? "Válida" : "Inválida") + "\n");
         System.out.println("+ " + this.listarDocumentos() + "\n");
         System.out.println("+ -------------------------------------------------------------- +\n") ;
     }
