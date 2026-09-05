@@ -15,5 +15,11 @@ public class Seguradora {
         FabricaApolice fabricaResidencial2 = new FabricaResidencial(500000, false, false);
         fabricaResidencial2.emitirApolice();
 
+        // Testes para Apólice de Vida
+        FabricaApolice fabricaVida = new FabricaVida(40, 500000, true, false);
+        fabricaVida.emitirApolice();
+
+        FabricaApolice fabricaVida2 = new FabricaVida(57, 600000, false, false);
+        fabricaVida2.emitirApolice();
 	}
 }
