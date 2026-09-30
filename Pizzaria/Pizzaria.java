@@ -51,6 +51,9 @@ public class Pizzaria {
                     pizzas.add(pizzaFrangoCatupiry);
                     pizzaFrangoCatupiry.resumoPedido();
                 }
+
+                default -> System.out.println("Opção inválida. Tente novamente.");
+                
             }
         }
     }
